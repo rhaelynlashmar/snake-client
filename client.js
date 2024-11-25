@@ -42,10 +42,20 @@ const connect = function() {
 
     });
 
-  }, 500);
+  }, 100);
+
+  // Do another connect callback to send the move command
+  // conn.on("connect", () => {
+  // Send initial move command
+  // conn.write("Move: up");    // conn.write("Move: down");
+  // conn.write("Move: left");
+  // conn.write("Move: right");
+  // });
 
   return conn;
 };
+
+
 
 
 
