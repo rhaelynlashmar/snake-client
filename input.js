@@ -27,6 +27,7 @@ const handleUserInput = function(key) {
   } else if (key === 'd') {
     connection.write("Move: right");
   } else if (key === '1') {
+    // Keys for in-game commentary
     connection.write("Say: Wassaaaap");
   } else if (key === '2') {
     connection.write("Say: Ouchie");
